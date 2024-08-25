@@ -1,6 +1,36 @@
-/vendor
-/.idea
+# environment config files
+.env
+
+# phpstorm project files
+.idea/
+
+# vscode project files
+.vscode/
+
+# netbeans project files
+nbproject
+
+# zend studio for eclipse project files
+.buildpath
+.project
+.settings
+
+# windows thumbnail cache
+Thumbs.db
+
+# composer vendor dir
+vendor/
+
+# composer itself is not needed
+composer.phar
+
+# Mac DS_Store Files
+.DS_Store
+
+# phpunit itself is not needed
+phpunit.phar
+.phpunit.result.cache
+
+# homestead files
 Homestead.json
 Homestead.yaml
-.env
-.phpunit.result.cache

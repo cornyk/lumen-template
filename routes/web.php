@@ -16,3 +16,11 @@
 $router->get('/', function () use ($router) {
     return $router->app->version();
 });
+
+$router->get('/api', 'IndexController@index');
+
+
+// health check url
+$router->addRoute(['GET', 'POST', 'PUT', 'DELETE', 'PATCH', 'OPTIONS'], '/ping', function () {
+    return \App\Utils\RespUtil::sucJson();
+});
